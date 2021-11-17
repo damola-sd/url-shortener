@@ -10,3 +10,8 @@
 
 Packages used are 
 - ``yup`` for validation, ``nanoid`` for short code creation, ``monk`` for quick mongodb connection.
+
+# Routes
+
+- ``/shorten`` takes a string required field ``longUrl``. Validates to ensure it's a valid URL and returns the shortened URL 
+- ``/:code`` redirects the user to the original url string. Code represents the shortened slug created 
